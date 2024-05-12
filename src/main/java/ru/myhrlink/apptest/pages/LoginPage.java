@@ -18,6 +18,7 @@ public class LoginPage {
 
     private static final By loginButton = xpath(".//button[@data-qa='credential-form-submit-button']");
 
+    //Метод авторизации на портале HR-link
     public void loginUser(String email, String password) {
         webdriver.findElement(loginField).sendKeys(email);
         webdriver.findElement(passwordField).sendKeys(password);

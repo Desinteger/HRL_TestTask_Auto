@@ -21,11 +21,12 @@ public class DocumentsRegistryPage {
         webdriver.findElement(cancelTelegramNotificationButton).click();
     }
 
+    //Метод проверяет, что документ, в котором в качестве сотрудника указан Орлов, не отображается в реестре документов
     public boolean isDocumentNotDisplayed(){
         return webdriver.findElements(employeeName).isEmpty();
     }
 
-    //
+    //Метод открывает фильтр "Юрлицо" в реестре документов и проверяет, что в списке нет юрлица с названием "ООО Кот"
     public boolean isLegalEntityInListBoxNotDisplayed() {
         webdriver.findElement(legalEntityFilter).click();
         return webdriver.findElements(legalEntity).isEmpty();
