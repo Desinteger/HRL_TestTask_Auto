@@ -41,6 +41,9 @@ Java 11, maven 3.9.1, JUnit 4.13.2, allure 2.23.0, selenium 4.20.0
   Метод авторизации, настройки и параметры WebDriver, а также открытие и закрытие браузера хранятся в отдельном классе BaseTest.  
   Креды и тестовые данные вынесены в отдельный класс TestData.
 
+# Склонировать репозиторий
+`git clone https://github.com/Desinteger/HRL_TestTask_Auto.git`
+
 # Настройки
 
 В методе setUp() в классе BaseTest:
