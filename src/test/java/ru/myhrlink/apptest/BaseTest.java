@@ -1,7 +1,7 @@
 package ru.myhrlink.apptest;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +26,7 @@ public class BaseTest {
         objLoginPage.loginUser(HR_EMAIL, HR_PASSWORD);
     }
 
-    @Before
+    @BeforeEach
     public void setUp() {
         WebDriverManager.chromedriver().clearDriverCache().setup();
         webdriver = new ChromeDriver();
@@ -37,7 +37,7 @@ public class BaseTest {
         tabNavigationManager = new TabNavigationManager(webdriver);
     }
 
-    @After
+    @AfterEach
     public void teardown() { webdriver.quit(); }
 
 }

@@ -4,7 +4,7 @@
 
 # Технологии
 
-Java 11, maven 3.9.1, JUnit 4.13.2, allure 2.23.0, selenium 4.20.0
+Java 11, maven 3.9.1, JUnit 5.10.2, allure 2.27.0, selenium 4.20.0
 
 # Описание
 

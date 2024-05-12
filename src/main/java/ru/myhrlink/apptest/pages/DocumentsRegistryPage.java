@@ -17,6 +17,7 @@ public class DocumentsRegistryPage {
     private static final By legalEntityFilter = xpath(".//div[8]//input[@type='text']");
     private static final By legalEntity = xpath(".//span[@class='ng-star-inserted'][contains(text(),'ООО Кот')]");
 
+    //Метод закрывает модальное окно "Уведомления в Телеграм" после авторизации на портале
     public void closeTelegramNotificationWindow(){
         webdriver.findElement(cancelTelegramNotificationButton).click();
     }
